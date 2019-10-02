@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:white;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.octodex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+body ul li a img {
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+li.octocat {
+    position: relative;
+}
+
+.octocat::before {
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 405px;
+    left: 385px;
+}
+
+a:nth-child(2) img {
+    display: none;
+}
+
+.image-number:before {
+    content:  ' \0023';
+}
+
+.image-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.image-number {
+    display: flex;
+}
+
+.image-caption {
+    display: flex;
+}
+
+.authors img {
+    width: 30px;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.authors li {
+    display: flex;
+    padding-left: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+span {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* flex-direction: row | row-reverse | column | column-reverse; */
+/* flex-wrap: nowrap | wrap | wrap-reverse; */
+/* flex-flow: <‘flex-direction’> || <‘flex-wrap’> */
+/* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+/* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; */
+/* align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe; */
+
+
+/* order: <integer>; /* default is 0 */ */
+/* flex-grow: <number>; /* default 0 */ */
+/* flex-shrink: <number>; /* default 1 */ */
+/* flex-basis: <length> | auto; /* default auto */ */
+/* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+/* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
